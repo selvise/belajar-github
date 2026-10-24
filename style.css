@@ -1,226 +1,28 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-body {
-    min-height: 100vh;
-
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
-    background: #0d1117;
-    font-family: Arial, sans-serif;
-    color: white;
-}
-
-
-/* PHONE */
-
-.phone {
-    width: 380px;
-    height: 700px;
-
-    background: #151b24;
-
-    border-radius: 30px;
-
-    display: flex;
-    flex-direction: column;
-
-    overflow: hidden;
-
-    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.4);
-}
-
-
-/* HEADER */
-
-.header {
-    padding: 20px;
-
-    text-align: center;
-
-    border-bottom: 1px solid #29313d;
-}
-
-.header h2 {
-    font-size: 18px;
-    font-weight: 500;
-}
-
-.header span {
-    display: block;
-
-    margin-top: 5px;
-
-    font-size: 12px;
-    color: #7f8a9a;
-}
-
-
-/* CHAT */
-
-.chat {
-    flex: 1;
-
-    padding: 20px;
-
-    display: flex;
-    flex-direction: column;
-
-    gap: 12px;
-
-    overflow-y: auto;
-}
-
-
-/* MESSAGE */
-
-.message {
-    max-width: 75%;
-
-    padding: 11px 14px;
-
-    border-radius: 16px;
-
-    font-size: 14px;
-    line-height: 1.4;
-}
-
-
-/* OUR MESSAGE */
-
-.me {
-    align-self: flex-end;
-
-    background: #344b72;
-
-    border-bottom-right-radius: 5px;
-}
-
-
-/* THEIR MESSAGE */
-
-.them {
-    align-self: flex-start;
-
-    background: #252d38;
-
-    border-bottom-left-radius: 5px;
-}
-
-
-/* CHOICES */
-
-.choices {
-    padding: 15px;
-
-    display: flex;
-    flex-direction: column;
-
-    gap: 10px;
-
-    border-top: 1px solid #29313d;
-}
-
-
-/* BUTTON */
-
-.choice {
-    padding: 12px;
-
-    border: 1px solid #394454;
-    border-radius: 12px;
-
-    background: transparent;
-    color: white;
-
-    cursor: pointer;
-
-    transition: 0.2s;
-}
-
-.choice:hover {
-    background: #222b37;
-}
-
-/* OPENING */
-
-.opening {
-    height: 100%;
-
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
-    text-align: center;
-
-    padding: 30px;
-}
-
-.opening-content {
-    width: 100%;
-}
-
-.small-title {
-    font-size: 11px;
-    letter-spacing: 4px;
-    color: #7f8a9a;
-
-    margin-bottom: 35px;
-}
-
-.opening h1 {
-    font-size: 72px;
-    font-weight: 300;
-
-    margin-bottom: 5px;
-}
-
-.days {
-    color: #aab3c0;
-    font-size: 13px;
-}
-
-.description {
-    margin-top: 45px;
-
-    color: #697586;
-
-    font-size: 13px;
-    line-height: 1.6;
-}
-
-.open-btn {
-    margin-top: 35px;
-
-    padding: 12px 25px;
-
-    border: 1px solid #394454;
-    border-radius: 20px;
-
-    background: transparent;
-    color: white;
-
-    cursor: pointer;
-
-    transition: 0.3s;
-}
-
-.open-btn:hover {
-    background: #222b37;
-}
-
-
-/* CHAT SCREEN */
-
-.chat-screen {
-    height: 100%;
-
-    display: none;
-
-    flex-direction: column;
-}
+*{
+            box-sizing: border-box;
+        }
+        body{
+            margin: 0;
+            background-color: rgb(248, 227, 230);
+        }
+        .header{
+            background-color: rgb(248, 227, 230);
+            padding: 20px;
+            text-align: center;
+        }
+        .topnav{
+            background-color: rgb(249, 217, 222);
+            overflow: hidden;
+        }
+        .topnav a{
+            float: left;
+            display: block;
+            color: black;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+        .topnav a:hover{
+            background-color: rgb(249, 197, 206);
+            color: black;
+        }

@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Explore Javascript</title>
+
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+body{
+    background:rgb(248, 227, 230);
+    text-align:center;
+}
+
+h1{
+    margin-top:35px;
+    margin-bottom:20px;
+}
+
+.form{
+    width:320px;
+    margin:auto;
+    background:#fff;
+    padding:15px;
+    text-align:left;
+    border-radius:3px;
+}
+
+.form label{
+    display:block;
+    margin-bottom:5px;
+}
+
+.form input,
+.form textarea{
+    width:100%;
+    padding:8px;
+    margin-bottom:15px;
+    border:1px solid #ddd;
+}
+
+.form button{
+    background:rgb(220, 170, 178);
+    color:white;
+    border:none;
+    padding:8px 15px;
+    cursor:pointer;
+}
+
+.form button:hover{
+    background:rgb(165, 124, 131);
+}
+
+#tanggal{
+    margin-top:20px;
+    font-size:22px;
+    font-weight:bold;
+}
+
+.clock{
+
+    width:420px;
+    margin:30px auto;
+    border:4px solid black;
+    background:#A7F3D0;
+    display:flex;
+    justify-content:space-evenly;
+    align-items:center;
+    padding:20px;
+    transition:0.6s;
+
+}
+
+.time{
+
+    text-align:center;
+
+}
+
+.time span{
+
+    display:block;
+    font-size:55px;
+    font-weight:bold;
+
+}
+
+.label{
+
+    font-size:18px;
+    font-weight:bold;
+    color:black;
+
+}
+
+</style>
+
+</head>
+
+<body>
+
+<h1>==== Form Validasi Javascript ====</h1>
+
+<div class="form">
+
+<form onsubmit="return validasi()">
+
+<label>Nama Lengkap :</label>
+
+<input
+type="text"
+id="nama">
+
+<label>Alamat :</label>
+
+<textarea
+id="alamat"
+rows="5"></textarea>
+
+<button type="submit">
+Submit
+</button>
+
+</form>
+
+</div>
+
+<h1>==== Tanggal dan Jam Digital ====</h1>
+
+<p id="tanggal"></p>
+
+<div class="clock" id="clock">
+
+<div class="time">
+
+<span id="jam">00</span>
+
+<div class="label">Jam</div>
+
+</div>
+
+<div class="time">
+
+<span id="menit">00</span>
+
+<div class="label">Menit</div>
+
+</div>
+
+<div class="time">
+
+<span id="detik">00</span>
+
+<div class="label">Detik</div>
+
+</div>
+
+</div>
+
+<script>
+
+function validasi(){
+
+let nama=document.getElementById("nama").value;
+let alamat=document.getElementById("alamat").value;
+
+if(nama==""){
+    alert("Nama harus diisi!");
+    return false;
+}
+
+if(alamat==""){
+    alert("Alamat harus diisi!");
+    return false;
+}
+
+alert("Data berhasil dikirim.");
+
+return true;
+
+}
+
+
+const warna=[
+
+"#A7F3D0",
+"#FFF59D",
+"#90CAF9",
+"#F8BBD0",
+"#CE93D8",
+"#B2EBF2",
+"#FFCC80",
+"#C8E6C9",
+"#FFE082",
+"#B39DDB"
+
+];
+
+let index=0;
+
+function gantiWarna(){
+
+document.getElementById("clock").style.background=warna[index];
+
+index++;
+
+if(index>=warna.length){
+
+index=0;
+
+}
+
+}
+
+function tampilJam(){
+
+let sekarang=new Date();
+
+document.getElementById("tanggal").innerHTML=
+"Waktu akses : "+sekarang;
+
+let jam=sekarang.getHours();
+let menit=sekarang.getMinutes();
+let detik=sekarang.getSeconds();
+
+jam=(jam<10)?"0"+jam:jam;
+menit=(menit<10)?"0"+menit:menit;
+detik=(detik<10)?"0"+detik:detik;
+
+document.getElementById("jam").innerHTML=jam;
+document.getElementById("menit").innerHTML=menit;
+document.getElementById("detik").innerHTML=detik;
+
+gantiWarna();
+
+}
+
+setInterval(tampilJam,1000);
+
+tampilJam();
+
+</script>
+
+</body>
+</html>
