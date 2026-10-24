@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SELVAIR & CO. | Perfume Store</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header class="navbar">
+        <a href="#home" class="logo">SELVAIR <span>& CO.</span></a>
+
+        <button class="menu-toggle" id="menuToggle"
+            aria-label="Buka menu" aria-expanded="false">
+            ☰
+        </button>
+
+        <nav id="navMenu">
+            <a href="#home">landing page</a>
+            <a href="#about">About</a>
+            <a href="#products">Products</a>
+            <a href="#guestbook">Guest Book</a>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero" id="home">
+            <div class="hero-content">
+                <p class="eyebrow">THE ART OF PERSONAL SCENT</p>
+                <h1>A Scent That<br>Speaks <em>For You.</em></h1>
+                <p class="hero-description">
+                    Discover fragrances that capture your personality,
+                    create memories, and leave a lasting impression.
+                </p>
+                <a href="#products" class="button">Explore Collection</a>
+            </div>
+
+            <div class="hero-image">
+                <img
+                    src="https://images.unsplash.com/photo-1594035910387-fea47794261f?auto=format&fit=crop&w=1000&q=85"
+                    alt="Botol parfum elegan">
+                <div class="image-caption">
+                    <span>01 / SIGNATURE COLLECTION</span>
+                    <span>Less, but better.</span>
+                </div>
+            </div>
+        </section>
+
+        <section class="about section" id="about">
+            <div class="about-image">
+                <img
+                    src="https://images.unsplash.com/photo-1541643600914-78b084683601?auto=format&fit=crop&w=900&q=85"
+                    alt="Koleksi parfum SELVAIR">
+            </div>
+
+            <div class="about-content">
+                <p class="eyebrow">OUR PHILOSOPHY</p>
+                <h2>More Than Just<br>A <em>Fragrance.</em></h2>
+                <p>
+                    At SELVAIR & CO., we believe that fragrance is a
+                    personal expression of who you are. Every scent
+                    tells a story, evokes emotions, and becomes a part
+                    of your most unforgettable moments.
+                </p>
+                <p>
+                    Thoughtfully selected fragrances, timeless elegance,
+                    and a touch of individuality in every bottle.
+                </p>
+                <a href="#products" class="text-link">Discover our scents ↗</a>
+            </div>
+        </section>
+
+        <section class="products section" id="products">
+            <div class="section-heading">
+                <p class="eyebrow">FIND YOUR SIGNATURE</p>
+                <h2>The Fragrance <em>Edit.</em></h2>
+                <p>Curated scents for every mood and every moment.</p>
+            </div>
+
+            <div class="product-grid">
+                <article class="product-card">
+                    <div class="product-image">
+                        <img
+                            src="https://images.unsplash.com/photo-1592945403244-b3fbafd7f539?auto=format&fit=crop&w=700&q=85"
+                            alt="Aero Silk perfume">
+                        <span class="product-tag">BESTSELLER</span>
+                    </div>
+                    <div class="product-info">
+                        <p class="product-category">FRESH · WOODY</p>
+                        <h3>Aero Silk</h3>
+                        <p class="product-description">
+                            Clean, airy, and effortlessly refined.
+                        </p>
+                        <div class="product-bottom">
+                            <span class="price">Rp429.000</span>
+                            <button class="add-button"
+                                data-product="Aero Silk"
+                                aria-label="Pilih Aero Silk">+</button>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="product-card">
+                    <div class="product-image">
+                        <img
+                            src="https://images.unsplash.com/photo-1615634260167-c8cdede054de?auto=format&fit=crop&w=700&q=85"
+                            alt="Velvet Bloom perfume">
+                    </div>
+                    <div class="product-info">
+                        <p class="product-category">FLORAL · MUSK</p>
+                        <h3>Velvet Bloom</h3>
+                        <p class="product-description">
+                            Soft florals with a sophisticated finish.
+                        </p>
+                        <div class="product-bottom">
+                            <span class="price">Rp449.000</span>
+                            <button class="add-button"
+                                data-product="Velvet Bloom"
+                                aria-label="Pilih Velvet Bloom">+</button>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="product-card">
+                    <div class="product-image">
+                        <img
+                            src="https://images.unsplash.com/photo-1590736969955-71cc94901144?auto=format&fit=crop&w=700&q=85"
+                            alt="Ocean Whisper perfume">
+                    </div>
+                    <div class="product-info">
+                        <p class="product-category">AQUATIC · FRESH</p>
+                        <h3>Ocean Whisper</h3>
+                        <p class="product-description">
+                            A refreshing escape inspired by the ocean.
+                        </p>
+                        <div class="product-bottom">
+                            <span class="price">Rp399.000</span>
+                            <button class="add-button"
+                                data-product="Ocean Whisper"
+                                aria-label="Pilih Ocean Whisper">+</button>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="product-card">
+                    <div class="product-image">
+                        <img
+                            src="https://images.unsplash.com/photo-1595425970377-c9703cf48b6d?auto=format&fit=crop&w=700&q=85"
+                            alt="Amber Night perfume">
+                    </div>
+                    <div class="product-info">
+                        <p class="product-category">AMBER · WARM</p>
+                        <h3>Amber Night</h3>
+                        <p class="product-description">
+                            Warm and deep, made for quiet evenings.
+                        </p>
+                        <div class="product-bottom">
+                            <span class="price">Rp459.000</span>
+                            <button class="add-button"
+                                data-product="Amber Night"
+                                aria-label="Pilih Amber Night">+</button>
+                        </div>
+                    </div>
+                </article>
+            </div>
+
+            <p class="selection-message" id="selectionMessage"
+                role="status" aria-live="polite"></p>
+        </section>
+
+        <section class="quote-section">
+            <p class="eyebrow">A LITTLE REMINDER</p>
+            <h2>"Your scent is your story.<br><em>Make it unforgettable.</em>"</h2>
+        </section>
+
+        <section class="guestbook section" id="guestbook">
+            <div class="guestbook-heading">
+                <p class="eyebrow">WE WOULD LOVE TO HEAR FROM YOU</p>
+                <h2>Leave a <em>Note.</em></h2>
+                <p>Share your thoughts or tell us about your favorite scent.</p>
+            </div>
+
+            <form id="guestForm">
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="name">Your Name</label>
+                        <input type="text" id="name" name="name"
+                            placeholder="Enter your name" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email">Your Email</label>
+                        <input type="email" id="email" name="email"
+                            placeholder="Enter your email" required>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="favorite">Favorite Fragrance</label>
+                    <select id="favorite" name="favorite" required>
+                        <option value="">Choose your favorite</option>
+                        <option>Aero Silk</option>
+                        <option>Velvet Bloom</option>
+                        <option>Ocean Whisper</option>
+                        <option>Amber Night</option>
+                        <option>Other</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="message">Your Message</label>
+                    <textarea id="message" name="message" rows="4"
+                        placeholder="Write something here..."
+                        required></textarea>
+                </div>
+
+                <button type="submit" class="button submit-button">
+                    Submit Message ↗
+                </button>
+            </form>
+
+            <div class="guestbook-entries" id="guestEntries"
+                aria-live="polite">
+                <h3>Guest Notes</h3>
+                <p class="empty-message">Your message will appear here.</p>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <a href="#home" class="logo">SELVAIR <span>& CO.</span></a>
+        <p>Fragrance for the moments that matter.</p>
+        <div class="footer-line"></div>
+        <p class="copyright">
+            © 2026 SELVAIR & CO. All rights reserved.
+        </p>
+        <p class="designer">Designed by Selvi Budi Seyani</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
